@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'users/show'
+  get 'users/new'
+  get 'users/create'
+  get 'show/new'
+  get 'show/create'
   root to: 'tasks#index'
   
   get 'login', to: 'sessions#new'
